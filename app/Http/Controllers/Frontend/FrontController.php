@@ -1,17 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class FrontController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('.backend.dashboard.index');
+        return view('front.home');
     }
 
     /**
